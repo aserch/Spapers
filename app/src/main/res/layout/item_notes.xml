@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:clickable="true"
+    app:strokeWidth="0dp"
+    app:cardBackgroundColor="@color/card_background"
+    app:cardElevation="4dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:fontFamily="@font/poppins"
+            android:paddingTop="16dp"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:paddingStart="16dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:text="note"
+            android:fontFamily="@font/poppins"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="8dp"/>
+
+        <ImageButton
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:background="@android:color/transparent"
+            android:padding="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_delete"
+            android:focusable="true"
+            app:tint="@color/material_on_background_emphasis_high_type" />
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

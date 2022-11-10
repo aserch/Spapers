@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/nav_about_me"
+        android:title="About Me"
+        android:icon="@drawable/ic_info"
+        />
+    <item
+        android:id="@+id/nav_rate_me"
+        android:title="Rate Me"
+        android:icon="@drawable/ic_round_star_24"
+        />
+</menu>

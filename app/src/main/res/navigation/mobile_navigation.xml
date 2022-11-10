@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/spapersFragment">
+
+    <fragment
+        android:id="@+id/spapersFragment"
+        android:name="com.example.noteas.SnotesFragment"
+        android:label="S Papers"
+        tools:layout="@layout/fragment_spapers" >
+        <action
+            android:id="@+id/action_spapersFragment_to_todoDetailFragment"
+            app:destination="@id/todoDetailFragment" />
+        <action
+            android:id="@+id/action_spapersFragment_to_insertTodoFragment"
+            app:destination="@id/insertTodoFragment" />
+        <action
+            android:id="@+id/action_spapersFragment_to_inputNoteFragment"
+            app:destination="@id/inputNoteFragment" />
+        <action
+            android:id="@+id/action_spapersFragment_to_noteDetailFragment"
+            app:destination="@id/noteDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/todoDetailFragment"
+        android:name="com.example.noteas.todo.TodoDetailFragment"
+        android:label="Todo"
+        tools:layout="@layout/fragment_todo_detail" >
+        <action
+            android:id="@+id/action_todoDetailFragment_to_spapersFragment"
+            app:destination="@id/spapersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/insertTodoFragment"
+        android:name="com.example.noteas.todo.InsertTodoFragment"
+        android:label="Add Todo"
+        tools:layout="@layout/fragment_insert_todo" >
+        <action
+            android:id="@+id/action_insertTodoFragment_to_spapersFragment"
+            app:destination="@id/spapersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputNoteFragment"
+        android:name="com.example.noteas.note.InputNoteFragment"
+        android:label="Add Notes"
+        tools:layout="@layout/fragment_input_note" >
+        <action
+            android:id="@+id/action_inputNoteFragment_to_spapersFragment"
+            app:destination="@id/spapersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteDetailFragment"
+        android:name="com.example.noteas.note.NoteDetailFragment"
+        android:label="Notes"
+        tools:layout="@layout/fragment_note_detail" >
+        <action
+            android:id="@+id/action_noteDetailFragment_to_spapersFragment"
+            app:destination="@id/spapersFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_about_me"
+        android:name="com.example.noteas.AboutMeFragment"
+        android:label="About Me" />
+
+    <fragment
+        android:id="@+id/nav_rate_me"
+        android:name="com.example.noteas.RateAppFragment"
+        android:label="Rate Me" />
+</navigation>

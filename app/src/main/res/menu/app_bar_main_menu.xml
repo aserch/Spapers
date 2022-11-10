@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/itm_theme"
+        android:enabled="true"
+        android:title="theme"
+        android:icon="@drawable/ic_dark_mode"
+        app:iconTint="@color/material_on_background_emphasis_high_type"
+        app:showAsAction="always"
+        />
+</menu>
